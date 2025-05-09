@@ -1,0 +1,91 @@
+body{
+    background-color: hsl(0, 0%, 100%);
+    margin: 0;
+    padding: 2rem;
+    /*min-height: 100vh;*/
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    /*display: grid;
+    justify-content: center;
+    align-items: center;*/
+    
+}
+
+@media (max-width:375px){
+    .testimonial-section{
+        /*grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 0.5fr 2fr 2fr;*/
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .Patrick-testimony{
+        grid-column: span 1;
+    }
+    .kira-testimony{
+        grid-column: span 2;
+    }
+    .jonathan-testimony{
+        margin: 0;
+    
+    }
+
+}
+
+.testimonial-section{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    grid-template-rows: 1fr 1fr;
+    gap : 2rem;
+    height: ;
+    margin-bottom: 50px ;
+    
+}
+
+.daniel-testimony{
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+    grid-column: span 2;
+}
+
+.jonathan-testimony{
+    background-color: hsl(224, 10%, 45%);
+    color:hsl(0, 0%, 100%);
+
+}
+
+.Jeanette-testimony{
+    background-color: hsl(0, 0%, 100%);
+    order: 1;
+}
+.Patrick-testimony{
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 100%);
+    order: 2;
+    grid-column: span 2;
+}
+.kira-testimony{
+    background-color: hsl(0, 0%, 100%);
+    grid-row: span 2;
+}
+
+.testimony{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px  hsl(0, 0%, 81%);
+    
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.image{
+    border-radius: 50%;
+}
+.name{
+    font-weight: 600;
+    color: ;
+}
